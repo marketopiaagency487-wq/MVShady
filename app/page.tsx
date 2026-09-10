@@ -821,6 +821,24 @@ export default function Home() {
         </div>
       )}
 
+      {/* ═══ FLOATING SIDE ACTIONS (desktop) ═══ */}
+      <div className="fab-stack">
+        <a href={WA_MAIN} target="_blank" rel="noopener" onClick={onWA} className="fab fab-wa" aria-label="تواصل واتساب">
+          <span className="fab-tip">تواصل واتساب</span>
+          <WaIcon s={26} />
+        </a>
+        <a href={`tel:${PHONE_INTL}`} onClick={onCall} className="fab fab-call" aria-label="اتصل بنا">
+          <span className="fab-tip">اتصل بنا — {PHONE_DISPLAY}</span>
+          <svg viewBox="0 0 24 24" className="w-[24px] h-[24px] fill-current" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" /></svg>
+        </a>
+        {solid && (
+          <button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="fab fab-top border-0 cursor-pointer" aria-label="أعلى الصفحة">
+            <span className="fab-tip">أعلى الصفحة</span>
+            <svg viewBox="0 0 24 24" className="w-[22px] h-[22px]" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" /></svg>
+          </button>
+        )}
+      </div>
+
       {/* ═══ MOBILE BAR ═══ */}
       <nav className="md:hidden fixed inset-x-0 bottom-0 z-95 bg-white border-t border-line p-2 flex gap-2">
         <a href={`tel:${PHONE_INTL}`} onClick={onCall} className="btn btn-coal flex-1 !py-3 !px-2 !text-[13.5px]">اتصال</a>
