@@ -5,14 +5,14 @@ import { useState, useEffect, useRef, FormEvent, ReactNode } from "react";
 /* ═══════════════════════════════════════════════════════════
    ①  الإعدادات
    ═══════════════════════════════════════════════════════════ */
-const PHONE_DISPLAY = "01000000000";
-const PHONE_INTL = "+201000000000";
-const WA_NUMBER = "201000000000";
+const PHONE_DISPLAY = "01123863254";
+const PHONE_INTL = "+201123863254";
+const WA_NUMBER = "201123863254";
 const WEB3_KEY = "PUT-YOUR-WEB3FORMS-KEY-HERE";
 
-const AGENT_AR = "جراندير سبيسز";
-const AGENT_EN = "Grandeur Spaces";
-const AGENT_EMAIL = "info@example.com";
+const AGENT_AR = "جراندير";
+const AGENT_EN = "Grandeur";
+const AGENT_EMAIL = "info@properties-mountainview.org";
 
 const wa = (m: string) => `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(m)}`;
 const WA_MAIN = wa("مرحباً، أريد الاستفسار عن أسعار ماونتن فيو 1.1 اكستنشن بالتجمع الخامس");
