@@ -5,15 +5,15 @@ import "./globals.css";
 /* ─────────────────────────────────────────────
    عدّل الحاجات دي بعد ما تجهّز الدومين والحساب
    ───────────────────────────────────────────── */
-const SITE_URL = "https://example.com";        // ← دومين الموقع
+const SITE_URL = "https://www.properties-mountainview.org/";        // ← دومين الموقع
 const ADS_ID = "AW-XXXXXXXXXX";                // ← Google Ads ID
 const CONV_FORM = `${ADS_ID}/XXXXXXXXXXXXXXXXXXX`;
 const CONV_WA = `${ADS_ID}/XXXXXXXXXXXXXXXXXXX`;
 const CONV_CALL = `${ADS_ID}/XXXXXXXXXXXXXXXXXXX`;
 
 const AGENT_EN = "Grandeur Spaces";            // ← اسم شركتك زي ما هو في توثيق Google Ads
-const AGENT_PHONE_INTL = "+20XXXXXXXXXX";
-const AGENT_EMAIL = "info@example.com";
+const AGENT_PHONE_INTL = "+201123863254";
+const AGENT_EMAIL = "info@properties-mountainview.org";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
